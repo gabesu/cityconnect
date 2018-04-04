@@ -580,8 +580,7 @@ body {
   color: white;
   text-align: center; }
   .header .city-illustration {
-    margin-top: 7em;
-    animation: float-phone 1s alternate infinite ease-in-out; }
+    margin-top: 7em; }
 
 .footer {
   background: white;
