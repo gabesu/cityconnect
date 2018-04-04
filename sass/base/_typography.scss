@@ -1,0 +1,16 @@
+h1,
+h2 {}
+
+h1 {
+    font-size: 3.6rem;
+    line-height: 1em;
+    @include mobile {
+        font-size: 1.8em;
+    }
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: white;
+}

@@ -1,0 +1,29 @@
+.navbar {
+    align-items: center;
+    padding: 1em 0;
+    .home-btn>.logo {
+        height: 50px;
+        @include mobile {
+            height: 30px;
+        }
+    }
+    .menu {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        @include mobile {
+            display: none;
+        }
+    }
+    .menu>.menu-item {
+        float: left;
+        .link {
+            text-decoration: none;
+            padding: .5em 1em;
+            color: white;
+            &:hover {
+                color: $city-green-300;
+            }
+        }
+    }
+}

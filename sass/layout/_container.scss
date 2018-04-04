@@ -1,0 +1,161 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body,
+html {
+    font-size: 62.5%;
+    color: $city-text-100;
+    font-family: $city-font;
+    overflow-x: hidden;
+    background: $city-blue-300;
+    @include font-mix(1em);
+}
+
+body {
+    background: url(../images/bg.svg);
+}
+
+.container {
+    width: 1000px;
+    padding: 5em 2em;
+    margin: 0 auto;
+    @include mobile {
+        width: 90%;
+        padding: 2em;
+    }
+}
+
+.how-it-works {
+    text-align: center;
+    color: white;
+    padding: 4em 0;
+    .how {
+        width: 30%;
+        margin-top: 5em;
+        @include mobile {
+            width: 100%;
+        }
+    }
+}
+
+.why-us {
+    .flex {
+        justify-content: space-around;
+    }
+    h2 {
+        position: relative;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 2em;
+            height: .2em;
+            background: $city-green-200;
+            bottom: -1em;
+            left: 0;
+            @include mobile {
+                margin-left: 50%;
+                left: -1em;
+            }
+        }
+    }
+    .why {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        color: white;
+        @include mobile {
+            text-align: center;
+        }
+        >li {
+            padding: 1em 0;
+        }
+    }
+    .stats {
+        @include mobile {
+            margin-top: 1em;
+        }
+        align-self: center;
+    }
+    .counter {
+        @include card;
+        padding-bottom: 4em;
+        text-align: center;
+        .icon-globe {
+            color: $city-green-200;
+        }
+        .count {
+            font-size: 4em;
+            margin-top: .5em;
+            color: $city-blue-200;
+        }
+    }
+}
+
+.business {
+    width: 100%;
+    background: white;
+    text-align: center;
+    padding: 4em 0;
+    .caption {
+        color: $city-text-200;
+    }
+    h2 {
+        color: $city-blue-300;
+    }
+    .business-prop {
+        margin-top: 4em;
+        justify-content: space-around;
+        .prop {
+            width: 25%;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 2em;
+            color: $city-text-200;
+            flex-direction: column;
+            @include mobile {
+                width: 100%;
+            }
+            >img {
+                height: 3em;
+            }
+        }
+    }
+}
+
+.app {
+    color: white;
+    h3 {
+        color: $city-green-200;
+    }
+    .app-screen {
+        margin-left: 10%;
+        transform: translateY(-30%);
+        animation: float-phone 1s alternate infinite ease-in-out;
+        @include mobile {
+            display: none;
+        }
+    }
+    .app-caption {
+        width: 50%;
+        @include mobile {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+.faqs {
+    display: flex;
+    flex-direction: column;
+    .btn {
+        align-self: center;
+        display: inline-block;
+        line-height: normal;
+        margin-top: 2em;
+    }
+}
