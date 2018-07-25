@@ -437,7 +437,7 @@ body {
 
 .container {
   width: 1000px;
-  padding: 5em 2em;
+  padding: 3em 2em;
   margin: 0 auto; }
   @media (max-width: 768px) {
     .container {
@@ -456,15 +456,21 @@ body {
         width: 100%; } }
 
 .why-us .flex {
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-items: center; }
+.why-us .route {
+  width: 40%; }
+  @media (max-width: 768px) {
+    .why-us .route {
+      width: 100%; } }
 .why-us h2 {
   position: relative; }
   .why-us h2::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 2em;
-    height: .2em;
+    height: 0.2em;
     background: #76C91C;
     bottom: -1em;
     left: 0; }
@@ -497,7 +503,7 @@ body {
     color: #76C91C; }
   .why-us .counter .count {
     font-size: 4em;
-    margin-top: .5em;
+    margin-top: 0.5em;
     color: #0267C1; }
 
 .business {
