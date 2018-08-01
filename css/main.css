@@ -666,6 +666,13 @@ body {
   .faq-card .answer {
     display: none; }
 
+.large-card {
+  border-radius: 5px;
+  background: white;
+  padding: 2em; }
+  .large-card h3 {
+    color: #39434F; }
+
 @keyframes float-phone {
   0% {
     transform: translateY(-30%); }
